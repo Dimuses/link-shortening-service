@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('original_link');
             $table->string('short_link', 8)->unique();
             $table->integer('max_visits')->default(0);
-            $table->integer('visits')->default(0)->nullable();
-            $table->dateTime('expires_at')->nullable();
+            $table->integer('visits')->default(0);
+            $table->dateTime('expires_at');
             $table->timestamps();
         });
     }
