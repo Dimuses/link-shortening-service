@@ -46,5 +46,9 @@ Follow the steps below to install and run the project.
     ```bash
     ./vendor/bin/sail artisan migrate
     ```
+7. **Generate app key**
+    ```bash
+    ./vendor/bin/sail artisan key:generate
+    ```
 
 This guide ensures that you can set up the project with minimal friction and is tailored to environments that use Docker and Laravel Sail for a consistent development experience.
